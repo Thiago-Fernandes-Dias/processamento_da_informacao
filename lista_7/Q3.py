@@ -4,7 +4,7 @@ def readMatrix():
         matrix.append([int(i) for i in readLine.split(' ') if i])
         readLine = input()
     return matrix
-    
+
 def getMatrixBorder(matrix):
     matrixColumns = len(matrix[0])
     topBorder = matrix[1][1:matrixColumns - 1]
@@ -15,7 +15,7 @@ def getMatrixBorder(matrix):
         rightBorder.append(matrix[i][matrixColumns - 2])
     matrixBorder = topBorder + bottomBorder + leftBorder + rightBorder
     return matrixBorder
-    
+
 def sumEvensInMatrixBorder(matrix):
     matrixBorder = getMatrixBorder(matrix)
     evens = []

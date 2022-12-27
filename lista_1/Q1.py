@@ -1,0 +1,1 @@
+print(f'Resultado = {(int(input()) + int(input())):.2f}')
